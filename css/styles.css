@@ -124,6 +124,7 @@ a:hover {
   display: inline-block;
   position: relative;
   width: 32%;
+  vertical-align: top;
 }
 
 .port {
@@ -312,6 +313,10 @@ a:hover {
     margin-top: 10px;
     background: white;
     padding: 0;
+  }
+
+  .nav li {
+    margin-left: 0;
   }
 
   .intro {
