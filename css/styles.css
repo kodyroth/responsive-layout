@@ -2,7 +2,7 @@
 * { 
   box-sizing: border-box;
 }
-  
+
 img {
   max-width: 100%;
   height: auto;     
@@ -52,7 +52,6 @@ a:hover {
 .main-nav ul {
   position: relative;
   display: block;
-  -webkit-padding-start: 0;
   margin: 0 auto;
   padding: 10px;
   }
@@ -101,7 +100,7 @@ a:hover {
   display: inline-block;
   width: 90%; 
   background: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.5em;
   margin: 2% auto; 
   font-weight: 300;
@@ -182,29 +181,29 @@ a:hover {
   font-weight: 800;
 }
 
-.bottomnav {
-    display: none;
-}
-
 .bnav {
   width: 90%;
-  display: flex;
+  display: inline-block;
   justify-content: space-around;
-  font-weight: 500;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1.0em
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 1.5em;
+  border-top: thin solid black;
 }
 
 .bnav .name {
     display: block;
     margin-right: auto;
     color: black;
+    float: left;
+    margin-left: -40px;
 }
 
 .bnav li {
   padding: 5px 10px 10px 10px;
+  float: right;
+  max-width: 40%;
 }
 
 .bnav a {
@@ -239,14 +238,18 @@ footer {
     margin-top: auto;
 }
 
+.bnav {
+  display: none;
+}
+
 /* Styles for medium screens */
 @media screen and (min-width: 325px) {
 
 .main-nav ul{
     position: relative;
     display: inline-block;
-    max-width: 90%;
-    margin-top: 30px;
+    max-width: 100%;
+    font-size: 1em;
   }
 
   .name {
@@ -260,12 +263,10 @@ footer {
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 1.2em;
   }
 
   .top {
     max-width: 100%;
-    margin-top: 40px;
     max-height: 280px;
     text-align: left;
     line-height: 1.2em;
@@ -297,23 +298,21 @@ footer {
     margin-top: 0px;
   }
 
-.bottomnav {
-  width: 95%;
-  display: inline-block;
-  color: black;
-  background: #fafafa;
-  height: 100px;
-  padding: 30px;
-  position: relative;
-  z-index: 0;
-  border-top: 1px solid #eee;
-  margin-bottom: 10px;
+.port {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 .backtop {
   display: none;
 }
+
+.bnav {
+  display: inline-block;
 }
+}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 769px) {
@@ -336,9 +335,10 @@ footer {
   }
 
   .main-nav ul{
-    margin-right: 0 auto;
+    margin-top: 35px;
     padding: 10px 14px 0px 0px;
     float: right;
+    font-size: 1.7em;
   }
 
   .nav {
@@ -351,7 +351,9 @@ footer {
     text-align: left;
   }
 
-
+  .top {
+    margin-bottom: 90px;
+  }
 
   .top p {
     line-height: 1.4em;
@@ -384,7 +386,7 @@ footer {
   float: left;
   color: #4a4a4a; 
 }
-
+}
 
 
 
