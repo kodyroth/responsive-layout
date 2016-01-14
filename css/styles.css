@@ -66,8 +66,8 @@ a:hover {
 }
 
 .home {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
@@ -99,7 +99,6 @@ a:hover {
 .top {
   display: inline-block;
   width: 90%; 
-  background: white;
   font-size: 1.2em;
   line-height: 1.5em;
   margin: 2% auto; 
@@ -243,7 +242,7 @@ footer {
 }
 
 /* Styles for medium screens */
-@media screen and (min-width: 325px) {
+@media screen and (min-width: 768px) {
 
 .main-nav ul{
     position: relative;
@@ -270,12 +269,11 @@ footer {
     max-height: 280px;
     text-align: left;
     line-height: 1.2em;
-    font-size: .9em;
+    font-size: 1.2em;
   }
 
   .top p {
     max-width: 45%; 
-    line-height: 1em;
   }
 
   .profileimage {
@@ -295,7 +293,7 @@ footer {
 
 .portfolio {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
 .port {
@@ -315,7 +313,7 @@ footer {
 
 
 /* Styles for larger screens */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
   
   .flex {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -336,7 +334,7 @@ footer {
 
   .main-nav ul{
     margin-top: 35px;
-    padding: 10px 14px 0px 0px;
+    padding: 10px 14px 0 0;
     float: right;
     font-size: 1.7em;
   }
@@ -356,7 +354,6 @@ footer {
   }
 
   .top p {
-    line-height: 1.4em;
     max-width: 55%;
     font-size: 1.7em;
     line-height: 1.7em; 
